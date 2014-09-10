@@ -14,8 +14,8 @@ You can also [download it](https://github.com/apalancat/PlayNow/archive/master.z
 
 ## Configuration
 
-PlayNow creates an OS X playground by default.
-If you prefer iOS playgrounds you can open the file `PlayNow.app/Contents/MacOS/PlayNow` with your favorite text editor and change `platform = "macosx"` to `platform = "iphonesimulator"` (non-favorite text editors could also work).
+PlayNow creates an iOS playground by default.
+If you prefer OS X playgrounds you can open the file `PlayNow.app/Contents/MacOS/PlayNow` with your favorite text editor and change `platform = "iphonesimulator"` to `platform = "macosx"` (non-favorite text editors could also work).
 
 ## How to use it?
 
