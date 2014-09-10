@@ -1,7 +1,7 @@
 #! /usr/bin/ruby
 require 'pathname'
 
-platform = "macosx" # change to "iphonesimulator" if you want an iOS playground
+platform = "iphonesimulator" # change to "macosx" if you want an OS X playground
 
 contents_xcplayground = <<XML
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
