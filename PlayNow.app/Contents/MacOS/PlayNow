@@ -1,14 +1,14 @@
 #! /usr/bin/ruby
 require 'pathname'
 
-platform = "iphonesimulator" # change to "macosx" if you want an OS X playground
+# change to "osx" if you want an OSX playground
+# change to "tvos" if you want a tvOS playground
+platform = "ios"
 
 contents_xcplayground = <<XML
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='1.0' sdk='#{platform}'>
-    <sections>
-        <code source-file-name='section-1.swift'/>
-    </sections>
+<playground version='5.0' target-platform='#{platform}'>
+    <timeline fileName='timeline.xctimeline'/>
 </playground>
 XML
 
@@ -18,7 +18,7 @@ path.rmtree if path.exist?
 path.mkpath
 File.open(path+"contents.xcplayground", 'w') {|f| f.write(contents_xcplayground) }
 
-section_1_swift = "import #{platform == "macosx" ? "Foundation" : "UIKit"}\n\n"
-File.open(path+"section-1.swift", 'w') {|f| f.write(section_1_swift) }
+section_1_swift = "import #{platform == "osx" ? "Cocoa" : "UIKit"}\n\n"
+File.open(path+"Contents.swift", 'w') {|f| f.write(section_1_swift) }
 
 `open #{path}`
