@@ -16,7 +16,7 @@ You can also [download it](https://github.com/apalancat/PlayNow/archive/master.z
 
 1. Install Homebrew: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 2. Install Cask: `brew install cask`
-3. Install OpenSim: `brew cask install playnow`
+3. Install PlayNow: `brew cask install playnow`
 
 ## Configuration
 
