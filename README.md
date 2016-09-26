@@ -12,6 +12,12 @@ Best way to install is using curl so it bypasses Gatekeeper (Thanks [mxcl](https
 
 You can also [download it](https://github.com/apalancat/PlayNow/archive/master.zip) and Control-click to have Gatekeeper give you the option to open it.
 
+## Install with Homebrew Cask
+
+1. Install Homebrew: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+2. Install Cask: `brew install cask`
+3. Install PlayNow: `brew cask install playnow`
+
 ## Configuration
 
 PlayNow creates an iOS playground by default.
